@@ -56,8 +56,8 @@ public class Migration implements RealmMigration {
                         }
                     })
                     .addIndex("fullName")
-                    .removeField("firstName")
-                    .removeField("lastName");
+                    .removeField("name")
+                    .removeField("surname");
             oldVersion++;
         }
 
